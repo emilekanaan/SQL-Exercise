@@ -30,3 +30,10 @@ SELECT employees.Name FROM employees JOIN companies ON employees.Company = compa
 SELECT companies.Name FROM companies JOIN employees ON companies.name = employees.Company WHERE employees.Role = "Graphic Designer";
 
 
+
+Count & Filter exercise:
+SELECT *, max(Points) FROM students;
+SELECT avg(Points) FROM students;
+SELECT count(Points) FROM students WHERE students.Points = "500";
+SELECT name FROM students WHERE students.name LIKE "%s%";
+SELECT * FROM students ORDER BY students.Points DESC;
